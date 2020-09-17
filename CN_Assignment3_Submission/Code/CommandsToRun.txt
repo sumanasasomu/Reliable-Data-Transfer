@@ -1,0 +1,72 @@
+SENDER
+
+python3 senderApp.py 127.0.0.1 5002 input2.txt op2
+
+
+RECEIVER
+
+python3 receiverApp.py 5002
+
+
+NETEM
+
+
+
+
+
+%% to see all modifications
+sudo tc qdisc show dev lo
+
+%% to delete all new rules and go to default
+sudo tc qdisc del dev lo root
+
+
+
+
+
+
+
+
+
+
+
+OLD NETEM COMMANDS:
+
+%% to add delay
+sudo tc qdisc add dev enp2s0 root netem delay 200ms
+
+%% to delete the delay added
+sudo tc qdisc del dev enp2s0 root netem delay 200ms
+
+%% to add packet loss
+sudo tc qdisc add dev enp2s0 root netem loss 10%
+
+%% to delete packet loss
+sudo tc qdisc del dev enp2s0 root netem loss 10%
+
+
+%% to see all modifications
+sudo tc qdisc show dev enp2s0
+
+%% to delete all new rules and go to default
+sudo tc qdisc del dev enp2s0 root
+
+
+sudo tc qdisc add dev enp2s0 root netem loss 70%
+
+sudo tc qdisc add dev enp2s0 root netem delay 8000ms 2000ms 25%
+
+sudo tc qdisc add dev enp2s0 root netem corrupt 25%
+
+sudo tc qdisc add dev anp2s0 root netem duplicate 40%
+
+
+sudo tc qdisc add dev enp2s0 root netem loss 70% delay 8000ms 2000ms 25% corrupt 25% duplicate 40%
+
+
+
+
+
+sudo tc qdisc add dev lo root netem delay 200ms 10ms 25% loss 60% duplicate 2% corrupt 10% reorder 25% 50%
+
+sudo tc qdisc add dev lo root netem delay 100ms 10ms 30% loss 50% duplicate 5% corrupt 15% reorder 25% 50%

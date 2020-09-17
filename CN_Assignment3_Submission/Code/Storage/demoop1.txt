@@ -1,0 +1,37 @@
+START
+
+This is my firest line
+This is my second line with some special characters . , / ; ' ] [ ' ( ) & %
+This is my third line
+
+Some random text ahead
+
+A protocol is a set of rules that are agreed by both sender and receiver, without a protocol two devices can be connected to each other but they cannot communicate. In order to establish a reliable communication or data sharing between two different devices we need set of rules that are called protocol. For example, http and https are the two protocols used by web browsers to get and post the data to internet, similarly smtp protocol is used by email services connected to the internet.
+
+Numbers 0 1 2 3 4 5 6 7 8 9
+
+Sender is the device that has the data and needs to send the data to other device connected to the network
+
+A receiver is the device which is expecting the data from other device on the network.
+
+Transmission media: In order to transfer data from one device to another device we need a transmission media such as wires, cables, radio waves etc
+
+COPY
+
+This is my firest line
+This is my second line with some special characters . , / ; ' ] [ ' ( ) & %
+This is my third line
+
+Some random text ahead
+
+A protocol is a set of rules that are agreed by both sender and receiver, without a protocol two devices can be connected to each other but they cannot communicate. In order to establish a reliable communication or data sharing between two different devices we need set of rules that are called protocol. For example, http and https are the two protocols used by web browsers to get and post the data to internet, similarly smtp protocol is used by email services connected to the internet.
+
+Numbers 0 1 2 3 4 5 6 7 8 9
+
+Sender is the device that has the data and needs to send the data to other device connected to the network
+
+A receiver is the device which is expecting the data from other device on the network.
+
+Transmission media: In order to transfer data from one device to another device we need a transmission media such as wires, cables, radio waves etc
+
+THE END
